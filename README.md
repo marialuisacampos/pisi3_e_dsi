@@ -12,3 +12,9 @@
 
 ## Dataset
 - https://www.kaggle.com/datasets/irkaal/foodcom-recipes-and-reviews
+
+
+## instalação
+rodar o comando pip install streamlit-pandas-profiling além do pip install -r requirements.txt --upgrade para rodar o streamlit junto com o pandas
+
+Também é necessário criar a pasta data na raiz do projeto, baixar o dataset recipes.csv e colar dentro da pasta
