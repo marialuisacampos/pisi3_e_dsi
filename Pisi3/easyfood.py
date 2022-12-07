@@ -1,7 +1,3 @@
-#import streamlit as st
-#import pandas_profiling
-#import pandas as pd
-#from pandas_profiling import ProfileReport
 import pandas as pd
 import pandas_profiling
 import streamlit as st
