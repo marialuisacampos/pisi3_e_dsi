@@ -1,14 +1,26 @@
-import streamlit
+import streamlit as st
+import pandas_profiling
+import pandas as pd
+from pandas_profiling import ProfileReport
 
-streamlit.set_page_config(
+
+
+st.set_page_config(
   page_title="EasyFood Management",
   layout="wide",
   menu_items = {
     "About": "Aplicativo para uma vida saudável e qualidade de vida mais prática",
-    "Equipe": "Camila de Moraes, Carlos Vinicius, Celso Soares, Gabriel Larena e Maria Luisa Campos."
+    #"Equipe": "Camila de Moraes, Carlos Vinicius, Celso Soares, Gabriel Larena e Maria Luisa Campos."
   }
 )
 
-jaAdicionouArquivo = streamlit.text_input('Já adicionou o arquivo csv Recipes.csv na pasta raiz? [S/N]')
+data_file = 'recipes'
+df = pd.read_csv(f'data/{data_file}.csv', sep=',')
 
-streamlit.markdown('Rodou!')
+profile = ProfileReport(df, title=f"{data_file} Dataset")
+profile._render_html()
+
+
+jaAdicionouArquivo = st.text_input('Já adicionou o arquivo csv Recipes.csv na pasta raiz? [S/N]')
+
+st.markdown('Rodou!')
