@@ -44,12 +44,11 @@ class _SignUpPageState extends State<SignUpPage> {
                         fontWeight: FontWeight.bold,
                       ),
                     ),
-                    SizedBox(height: 12),
+                    SizedBox(height: 20),
                     Text('Cadastro',
                         style: const TextStyle(
                           color: Colors.black,
                           fontSize: 15,
-                          fontWeight: FontWeight.bold,
                         )),
                     Divider(),
                     TextFormField(

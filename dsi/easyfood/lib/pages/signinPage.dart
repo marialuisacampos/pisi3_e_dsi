@@ -45,7 +45,13 @@ class _SignInPageState extends State<SignInPage> {
                       fontWeight: FontWeight.bold,
                     ),
                   ),
-                  Divider(height: 60),
+                  SizedBox(height: 20),
+                  Text('Login',
+                      style: const TextStyle(
+                        color: Colors.black,
+                        fontSize: 15,
+                      )),
+                  Divider(),
                   TextFormField(
                     autofocus: true,
                     keyboardType: TextInputType.emailAddress,
