@@ -66,15 +66,16 @@ class _PreviewPageState extends State<PreviewPage> {
                   height: 50.0,
                   width: 230.0,
                   child: ElevatedButton(
-                    child: Text('Login'),
+                    child: Text('LOGIN'),
                     style: ElevatedButton.styleFrom(
                         shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(18.0)),
+                            borderRadius: BorderRadius.circular(30)),
                         backgroundColor: Color(0xff29af6f),
                         textStyle: const TextStyle(
                             color: Colors.white,
-                            fontSize: 10,
-                            fontStyle: FontStyle.normal)),
+                            fontSize: 15,
+                            fontStyle: FontStyle.normal,
+                            fontWeight: FontWeight.bold)),
                     onPressed: () {
                       Navigator.push(
                           context,
@@ -90,15 +91,16 @@ class _PreviewPageState extends State<PreviewPage> {
                   height: 50.0,
                   width: 230.0,
                   child: ElevatedButton(
-                    child: Text('Cadastro'),
+                    child: Text('CADASTRO'),
                     style: ElevatedButton.styleFrom(
                         shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(18.0)),
+                            borderRadius: BorderRadius.circular(30)),
                         backgroundColor: Color(0xff29af6f),
                         textStyle: const TextStyle(
                             color: Colors.white,
-                            fontSize: 10,
-                            fontStyle: FontStyle.normal)),
+                            fontSize: 15,
+                            fontStyle: FontStyle.normal,
+                            fontWeight: FontWeight.bold)),
                     onPressed: () {
                       Navigator.push(
                           context,
@@ -114,15 +116,16 @@ class _PreviewPageState extends State<PreviewPage> {
                   height: 50.0,
                   width: 230.0,
                   child: ElevatedButton(
-                    child: Text('Sobre'),
+                    child: Text('SOBRE'),
                     style: ElevatedButton.styleFrom(
                         shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(18.0)),
+                            borderRadius: BorderRadius.circular(30)),
                         backgroundColor: Color(0xff29af6f),
                         textStyle: const TextStyle(
                             color: Colors.white,
-                            fontSize: 10,
-                            fontStyle: FontStyle.normal)),
+                            fontSize: 15,
+                            fontStyle: FontStyle.normal,
+                            fontWeight: FontWeight.bold)),
                     onPressed: () {
                       Navigator.push(context,
                           MaterialPageRoute(builder: (context) => AboutPage()));
