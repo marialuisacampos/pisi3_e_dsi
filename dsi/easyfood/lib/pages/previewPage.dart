@@ -12,6 +12,7 @@ class _PreviewPageState extends State<PreviewPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Color(0xfff2f2f2),
       body: Container(
         child: SingleChildScrollView(
           child: Padding(
