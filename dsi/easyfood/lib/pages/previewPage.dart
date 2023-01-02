@@ -70,7 +70,7 @@ class _PreviewPageState extends State<PreviewPage> {
                     style: ElevatedButton.styleFrom(
                         shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(18.0)),
-                        backgroundColor: Colors.green,
+                        backgroundColor: Color(0xff29af6f),
                         textStyle: const TextStyle(
                             color: Colors.white,
                             fontSize: 10,
@@ -94,7 +94,7 @@ class _PreviewPageState extends State<PreviewPage> {
                     style: ElevatedButton.styleFrom(
                         shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(18.0)),
-                        backgroundColor: Colors.green,
+                        backgroundColor: Color(0xff29af6f),
                         textStyle: const TextStyle(
                             color: Colors.white,
                             fontSize: 10,
@@ -118,7 +118,7 @@ class _PreviewPageState extends State<PreviewPage> {
                     style: ElevatedButton.styleFrom(
                         shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(18.0)),
-                        backgroundColor: Colors.green,
+                        backgroundColor: Color(0xff29af6f),
                         textStyle: const TextStyle(
                             color: Colors.white,
                             fontSize: 10,

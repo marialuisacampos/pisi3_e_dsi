@@ -1,3 +1,6 @@
+import 'dart:io';
+
+import 'package:easyfood/pages/signupPage.dart';
 import 'package:flutter/material.dart';
 
 class SignInPage extends StatefulWidget {
@@ -20,51 +23,100 @@ class _SignInPageState extends State<SignInPage> {
         ),
         body: Padding(
           child: Center(
-            child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: <Widget>[
-                  Container(
-                    height: 60,
-                    width: 60,
-                    decoration: BoxDecoration(
-                        image: DecorationImage(
-                            image: AssetImage(
-                              "assets/images/logotipo.jpg",
-                            ),
-                            fit: BoxFit.fill)),
-                  ),
-                  Text(
-                    "EasyFood",
-                    style: const TextStyle(
-                      color: Colors.black,
-                      fontSize: 45.0,
-                      fontWeight: FontWeight.bold,
-                    ),
-                  ),
-                  Divider(height: 60),
-                  TextFormField(
-                    autofocus: true,
-                    keyboardType: TextInputType.emailAddress,
-                    decoration: InputDecoration(
-                        labelText: "Email",
-                        labelStyle: TextStyle(
-                            color: Color.fromRGBO(30, 30, 30, 100),
-                            fontSize: 20)),
-                  ),
-                  SizedBox(
-                    height: 20,
-                  ),
-                  TextFormField(
-                    autofocus: true,
-                    keyboardType: TextInputType.text,
-                    obscureText: true,
-                    decoration: InputDecoration(
-                        labelText: "Senha",
-                        labelStyle: TextStyle(
-                            color: Color.fromRGBO(30, 30, 30, 100),
-                            fontSize: 20)),
-                  )
-                ]),
+            child:
+                Column(mainAxisAlignment: MainAxisAlignment.center, children: <
+                    Widget>[
+              Container(
+                height: 60,
+                width: 60,
+                decoration: BoxDecoration(
+                    image: DecorationImage(
+                        image: AssetImage(
+                          "assets/images/logotipo.jpg",
+                        ),
+                        fit: BoxFit.fill)),
+              ),
+              Text(
+                "EasyFood",
+                style: const TextStyle(
+                  color: Colors.black,
+                  fontSize: 45.0,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+              Divider(height: 60),
+              TextFormField(
+                autofocus: true,
+                keyboardType: TextInputType.emailAddress,
+                decoration: InputDecoration(
+                    labelText: "Email",
+                    labelStyle: TextStyle(
+                        color: Color.fromRGBO(30, 30, 30, 100), fontSize: 20)),
+              ),
+              SizedBox(
+                height: 20,
+              ),
+              TextFormField(
+                autofocus: true,
+                keyboardType: TextInputType.text,
+                obscureText: true,
+                decoration: InputDecoration(
+                    labelText: "Senha",
+                    labelStyle: TextStyle(
+                        color: Color.fromRGBO(30, 30, 30, 100), fontSize: 20)),
+              ),
+              SizedBox(
+                height: 30,
+              ),
+              new GestureDetector(
+                onTap: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => SignUpPage()));
+                },
+                child: Text("Esqueceu a senha?",
+                    style: const TextStyle(color: Color(0xff29af6f))),
+              ),
+              SizedBox(height: 30),
+              Container(
+                height: 50.0,
+                width: 230.0,
+                child: ElevatedButton(
+                  child: Text('Login'),
+                  style: ElevatedButton.styleFrom(
+                      shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(30)),
+                      backgroundColor: Color(0xff29af6f),
+                      textStyle: const TextStyle(
+                          color: Colors.white,
+                          fontStyle: FontStyle.normal,
+                          fontWeight: FontWeight.bold)),
+                  onPressed: () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => SignInPage()));
+                  },
+                ),
+              ),
+              SizedBox(height: 20),
+              Container(
+                height: 40,
+                width: 150,
+                child: ElevatedButton(
+                  child: Text('Cadastre-se'),
+                  style: ElevatedButton.styleFrom(
+                      shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(20)),
+                      backgroundColor: Color(0xffa6d388),
+                      textStyle: const TextStyle(
+                          color: Color(0xff156f43),
+                          fontStyle: FontStyle.normal,
+                          fontWeight: FontWeight.bold)),
+                  onPressed: () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => SignUpPage()));
+                  },
+                ),
+              )
+            ]),
           ),
           padding: EdgeInsets.all(50),
         ));
