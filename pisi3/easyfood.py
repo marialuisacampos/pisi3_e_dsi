@@ -73,7 +73,7 @@ st.set_page_config(
   }
 )
 
-data_file = 'recipes_sample'
+data_file = 'recipes'
 df = pd.read_csv(f'data/{data_file}.csv', sep=',')
 df = removeColumnsNotUsed(df)
 df = removeNullValues(df)
